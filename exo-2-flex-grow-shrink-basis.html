@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exo Flex : grow, shrink, basis...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            display: flex;
+        }
+        body > * {
+            padding: .5rem;
+            box-sizing: border-box;
+        }
+
+        /* Utilisez :
+            10rem 25rem auto initial none flex flex flex width width
+        */
+        body > header {
+            background-color: lightcoral;
+
+
+        }
+
+        body > main {
+            background-color: lightblue;
+
+
+        }
+
+        body > aside {
+            background-color: lightgoldenrodyellow;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <h3>Menu principal</h3>
+        <ul>
+            <li><a href="#1">Lien du menu 1</a></li>
+            <li><a href="#2">Lien du menu 2</a></li>
+            <li><a href="#3">Lien du menu 3</a></li>
+            <li><a href="#4">Lien du menu 4</a></li>
+            <li><a href="#5">Lien du menu 5</a></li>
+        </ul>
+        <p>Doit faire une taille normale</p>
+        <p>Celle de son contenu.</p>
+    </nav>
+</header>
+<main>
+    <h1>Contenu</h1>
+    <p>Doit occuper le plus de place possible et sinon idéalement 25rem en largeur</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad, alias aliquid beatae blanditiis
+        consequatur culpa cumque deleniti dolores, eius est et ex exercitationem expedita hic id in iste itaque
+        labore minima molestiae natus odio optio porro quae, quam quasi quisquam recusandae reiciendis repellat
+        rerum sed sint suscipit tempore vero voluptate voluptatum! Adipisci cupiditate dolorem possimus saepe
+        veritatis. Architecto, et.</p>
+</main>
+<aside>
+        <p>Doit faire 10rem de largeur peut réduire si nécessaire</p>
+</aside>
+</body>
+</html>
